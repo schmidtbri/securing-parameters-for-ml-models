@@ -1,0 +1,11 @@
+service_title: Diabetes Risk Model Service
+models:
+  - class_path: diabetes_risk_model.prediction.model.DiabetesRiskModel
+    create_endpoint: true
+    configuration:
+      model_parameters_version: "2023_03_17"
+      model_files_bucket: model-files
+      minio_url: minio-svc.model-services:9000
+      minio_access_key: ${MINIO_ACCESS_KEY}
+      minio_secret_key: ${MINIO_SECRET_KEY}
+      parameters_signing_key: ${PARAMETERS_SIGNING_KEY}

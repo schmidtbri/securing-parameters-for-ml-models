@@ -1,0 +1,9 @@
+kaggle
+sweetviz
+pycaret==3.0.0rc9
+itsdangerous
+minio
+pydantic
+ml_base
+rest_model_service
+notebook
